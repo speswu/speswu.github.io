@@ -11,7 +11,7 @@
     <!-- Open Graph -->
     <meta property="og:title" content="Mr Wu">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://localhost:4000/links">
+    <meta property="og:url" content="https://me.spes.ac.cn/links.html">
     <meta property="og:baseurl" content="">
     <meta property="og:description" content="个人博客站点，用于展示并记录经历。">
     <meta property="og:site_name" content="Mr Wu">
@@ -49,11 +49,11 @@
     <div class="alert-danger" role="alert">你的浏览器实在太太太旧了，放学别走，升级完浏览器再说！<a target="_blank" class="alert-link" href="http://browsehappy.com">立即升级</a></div>
     <![endif]-->
     
-    <div id="all">
+    <div id="all" data-theme="default">
     
       <input id="nm-switch" type="hidden" value="false">
       <div class="visible">
-        <header class="g-header">
+        <header class="g-header" data-theme="default">
     <div class="g-logo">
       <a href="/" aria-label="logo"></a>
     </div>
@@ -148,8 +148,11 @@
         <div class="post-content" style="padding-left: 30px;padding-right: 30px;width: auto;">
             <article class="markdown-body" style="width: auto;">
                 
+                
+                
+                
 <div class="friends">
-    <h2>链接</h2>
+    <h2>Links</h2>
     
     <a target="_blank" href="https://github.com" title="Github" class="friendurl" rel="nofollow">
         <div class="frienddiv">
@@ -177,7 +180,7 @@
     
 </div>
 <div class="friends">
-    <h2>朋友们</h2>
+    <h2>Friends</h2>
     
     <a target="_blank" href="https://lisz.me" title="Mr Li" class="friendurl" rel="nofollow">
         <div class="frienddiv">
@@ -452,40 +455,41 @@
 
 
 <footer class="g-footer">
-  <section class="links">Mr Wu ©
-  
-  
-    2015
-    -
-  
-  2023
-  
-    <a href="https://beian.miit.gov.cn/" target="_blank" class="extlinks">xxxxxxxx号</a>
-  
-  </section>
-  <section class="links">
-    本站由 <a href="//jekyllrb.com" target="_blank" class="extlinks">Jekyll</a> 和 (基于 <a href="https://github.com/kaeyleo/jekyll-theme-H2O" target="_blank" class="extlinks">H2O</a> 的) <a href="https://github.com/zhonger/jekyll-theme-H2O-ac" target="_blank" class="extlinks">H2O-ac</a> 强力驱动
-     (<a href="https://github.com/zhonger/jekyll-theme-H2O-ac/releases/tag/v.1.2.0" target="_blank" class="extlinks">v1.2.0</a>)  
+  <div class="g-container">
+    <div class="g-left">
+      <section class="links">
+        本站由 <a href="//jekyllrb.com" target="_blank" class="extlinks">Jekyll</a> 和 (基于 <a href="https://github.com/kaeyleo/jekyll-theme-H2O" target="_blank" class="extlinks">H2O</a> 的) <a href="https://github.com/zhonger/jekyll-theme-H2O-ac" target="_blank" class="extlinks">H2O-ac</a> 强力驱动
+         (<a href="https://github.com/zhonger/jekyll-theme-H2O-ac/releases/tag/v.1.2.1" target="_blank" class="extlinks">v1.2.1</a>)  
+        
+      </section>
+      <section class="links">Mr Wu ©
+        
+        
+        2023
+        
+          <a href="https://beian.miit.gov.cn/" target="_blank" class="extlinks">xxxxxxxx号</a>
+        
+      </section>
+      
+      <section>
+        <span id="busuanzi_container_site_pv">
+          👁️ 总浏览量 <span id="busuanzi_value_site_pv"></span> <b>·</b>
+        </span>
+        <span id="busuanzi_container_site_uv">
+          👤 总访问量 <span id="busuanzi_value_site_uv"></span>
+        </span>
+      </section>
+      
+      <section>
+        
+      </section>
+    </div>
+    <div class="g-right">
+      
+      
+    </div>
     
-  </section>
-  
-  
-  <section>
-    <span id="busuanzi_container_site_pv">
-      👁️ 总浏览量 <span id="busuanzi_value_site_pv"></span> <b>·</b>
-    </span>
-    <span id="busuanzi_container_site_uv">
-      👤 总访问量 <span id="busuanzi_value_site_uv"></span>
-    </span>
-  </section>
-  
-  
-  <section>
-    
-    
-    
-    
-  </section>
+  </div>
 </footer>
 <div class="cookie-tip">
    为了提升本站的使用体验和必要功能的正常使用，本站会使用本地 Cookie。详细请查看「 <a href="/tos.html">本站使用条款</a> 」了解更多。

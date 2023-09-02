@@ -12,7 +12,7 @@
     <!-- Open Graph -->
     <meta property="og:title" content="Hello Jekyll - Mr Wu">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://localhost:4000/hello-jekyll.html">
+    <meta property="og:url" content="https://me.spes.ac.cn/hello-jekyll.html">
     <meta property="og:baseurl" content="">
     <meta property="og:description" content="个人博客站点，用于展示并记录经历。">
     <meta property="og:site_name" content="Mr Wu">
@@ -62,7 +62,7 @@
   <div class="alert-danger" role="alert">你的浏览器实在太太太旧了，放学别走，升级完浏览器再说！<a target="_blank" class="alert-link" href="http://browsehappy.com">立即升级</a></div>
   <![endif]-->
   
-  <div id="all" class="post">
+  <div id="all" class="post" data-theme="default">
   
     <div class="alert-tip" id="no-previous">
       已经是最新一篇文章了！
@@ -70,7 +70,7 @@
     <div class="alert-tip" id="no-next">
       已经是最后一篇文章了！
     </div>
-    <input id="nm-switch" type="hidden" value="false"> <header class="g-header">
+    <input id="nm-switch" type="hidden" value="false"> <header class="g-header" data-theme="default">
     <div class="g-logo">
       <a href="/" aria-label="logo"></a>
     </div>
@@ -226,7 +226,8 @@
       
       <div class="container">  
         <div class="contents">
-          <article class="markdown-body">
+          <article class="markdown-body post">
+              
             <blockquote>
   <p>Transform your plain text into static websites and blogs.</p>
 </blockquote>
@@ -237,7 +238,7 @@
 
 <h3 id="so-what-is-jekyll-exactlypermalink">So what is Jekyll, exactly?Permalink</h3>
 
-<p>Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like <a href="https://daringfireball.net/projects/markdown/">Markdown</a>) and our <a href="https://github.com/Shopify/liquid/wiki">Liquid</a> renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind GitHub Pages, which means you can use Jekyll to host your project’s page, blog, or website from GitHub’s servers for free.</p>
+<p>Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like <a href="https://daringfireball.net/projects/markdown/" rel="nofollow" target="_blank" class="extlinks">Markdown</a>) and our <a href="https://github.com/Shopify/liquid/wiki" rel="nofollow" target="_blank" class="extlinks">Liquid</a> renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind GitHub Pages, which means you can use Jekyll to host your project’s page, blog, or website from GitHub’s servers for free.</p>
 
 <h3 id="helpful-hintspermalink">Helpful HintsPermalink</h3>
 
@@ -251,7 +252,7 @@
               <p>
                 <span>版权声明：</span>
                 如无特别声明，本文版权归
-                <a href="http://localhost:4000">Mr Wu</a>
+                <a href="https://me.spes.ac.cn" class="cplink">Mr Wu</a>
                 所有，转载请注明本文链接。 
               </p>
               
@@ -262,14 +263,14 @@
                 </p>
               
               <p><span>本文标题：</span>《 Hello Jekyll 》</p>
-              <p><span>本文链接：</span><a href="http://localhost:4000/hello-jekyll.html">http://localhost:4000/hello-jekyll.html</a></p>
+              <p><span>本文链接：</span><a href="https://me.spes.ac.cn/hello-jekyll.html" class="cplink">https://me.spes.ac.cn/hello-jekyll.html</a></p>
               <p class="tips">本文最后一次更新为 <span></span> 天前，文章中的某些内容可能已过时！</p>
             </div>
           </article>
         </div>   
         <div class="table-of-contents">
           <h2>目录</h2>
-          <ul><li><a href="#welcome">Welcome</a></li><li><a href="#so-what-is-jekyll-exactlypermalink">So what is Jekyll, exactly?Permalink</a></li><li><a href="#helpful-hintspermalink">Helpful HintsPermalink</a></li><li><a href="#video-test">Video Test</a></li></ul>
+          <ul><li><a onclick="scrollToAdjust('welcome')">Welcome</a></li><li><a onclick="scrollToAdjust('so-what-is-jekyll,-exactly?permalink')">So what is Jekyll, exactly?Permalink</a></li><li><a onclick="scrollToAdjust('helpful-hintspermalink')">Helpful HintsPermalink</a></li><li><a onclick="scrollToAdjust('video-test')">Video Test</a></li></ul>
         </div>
       </div>
       
@@ -320,40 +321,41 @@
 
 
 <footer class="g-footer">
-  <section class="links">Mr Wu ©
-  
-  
-    2015
-    -
-  
-  2023
-  
-    <a href="https://beian.miit.gov.cn/" target="_blank" class="extlinks">xxxxxxxx号</a>
-  
-  </section>
-  <section class="links">
-    本站由 <a href="//jekyllrb.com" target="_blank" class="extlinks">Jekyll</a> 和 (基于 <a href="https://github.com/kaeyleo/jekyll-theme-H2O" target="_blank" class="extlinks">H2O</a> 的) <a href="https://github.com/zhonger/jekyll-theme-H2O-ac" target="_blank" class="extlinks">H2O-ac</a> 强力驱动
-     (<a href="https://github.com/zhonger/jekyll-theme-H2O-ac/releases/tag/v.1.2.0" target="_blank" class="extlinks">v1.2.0</a>)  
+  <div class="g-container">
+    <div class="g-left">
+      <section class="links">
+        本站由 <a href="//jekyllrb.com" target="_blank" class="extlinks">Jekyll</a> 和 (基于 <a href="https://github.com/kaeyleo/jekyll-theme-H2O" target="_blank" class="extlinks">H2O</a> 的) <a href="https://github.com/zhonger/jekyll-theme-H2O-ac" target="_blank" class="extlinks">H2O-ac</a> 强力驱动
+         (<a href="https://github.com/zhonger/jekyll-theme-H2O-ac/releases/tag/v.1.2.1" target="_blank" class="extlinks">v1.2.1</a>)  
+        
+      </section>
+      <section class="links">Mr Wu ©
+        
+        
+        2023
+        
+          <a href="https://beian.miit.gov.cn/" target="_blank" class="extlinks">xxxxxxxx号</a>
+        
+      </section>
+      
+      <section>
+        <span id="busuanzi_container_site_pv">
+          👁️ 总浏览量 <span id="busuanzi_value_site_pv"></span> <b>·</b>
+        </span>
+        <span id="busuanzi_container_site_uv">
+          👤 总访问量 <span id="busuanzi_value_site_uv"></span>
+        </span>
+      </section>
+      
+      <section>
+        
+      </section>
+    </div>
+    <div class="g-right">
+      
+      
+    </div>
     
-  </section>
-  
-  
-  <section>
-    <span id="busuanzi_container_site_pv">
-      👁️ 总浏览量 <span id="busuanzi_value_site_pv"></span> <b>·</b>
-    </span>
-    <span id="busuanzi_container_site_uv">
-      👤 总访问量 <span id="busuanzi_value_site_uv"></span>
-    </span>
-  </section>
-  
-  
-  <section>
-    
-    
-    
-    
-  </section>
+  </div>
 </footer>
 <div class="cookie-tip">
    为了提升本站的使用体验和必要功能的正常使用，本站会使用本地 Cookie。详细请查看「 <a href="/tos.html">本站使用条款</a> 」了解更多。
@@ -440,6 +442,19 @@
   <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.2/plugin/customParseFormat.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.2/plugin/relativeTime.js"></script>
   <script>
+    /**
+    * Better Scroll Experience
+    */
+    function scrollToAdjust(id){
+      var element = document.getElementById(id);
+      var headerOffset = 90;
+      var elementPosition = element.getBoundingClientRect().top;
+      var offsetPosition = elementPosition + window.scrollY - headerOffset;
+      window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+      });
+    }
       // 给图片添加链接
       $(document).ready(function() {
           var baseurl = $("meta[property='og:baseurl']").attr('content');
