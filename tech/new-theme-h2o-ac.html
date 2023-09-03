@@ -784,9 +784,23 @@
         
       </section>
       
+      <section class="post-footer-item comment">
+        <div class="comments-headline">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-comment"></use>
+          </svg>
+          <span>评论</span>
+        </div>
+        
+      </section>      
+      
    
       
 
+      
+      <section class="post-footer-item comment">
+          <div id="waline"></div>
+      </section>
       
     </section>
 
@@ -910,6 +924,8 @@
   <script src="https://cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/hotkeys-js/dist/hotkeys.min.js"></script>
   
+<script src="https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js" async></script>
   <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.2/dayjs.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.2/plugin/customParseFormat.js"></script>
@@ -951,6 +967,14 @@
             }
           });   
           
+          
+            Waline.init({
+              el: '#waline',
+              serverURL: 'https://waline.spes.ac.cn',
+              reaction: false,
+              comment: true,
+              locale: 
+            });
           
 
           if($("#comments-switch").length > 0){
